@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <p class='text-white'>{{title}}</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item my-2">
+            <app-button text='User list'  btnDelete='no' (btnClick)="cancelVisibility()"> </app-button>
+          </li>
+          <li class="nav-item my-2">
+            <app-button text='Add' btnDelete='no' (btnClick)="togglePageAdd()"> </app-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+ 

@@ -1,0 +1,26 @@
+<form class='border border-dark rounded p-0' *ngIf="showAddUser"  (ngSubmit)="onSubmit()">
+    <h1 class='text-center'>{{title}}</h1>
+    <hr class='border border-dark'>
+    <div class="row p-2">
+        <div class="col-12 col-lg-6">
+            <label for="exampleFormControlInput1">Name*</label>
+            <input type="text" class="form-control border border-dark" id="name" name='name' [(ngModel)]="name" placeholder="Name*"  required>
+        </div>
+        <div class="col-12 col-lg-6">
+            <label for="exampleFormControlInput1">Surname*</label>
+            <input type="text" class="form-control border border-dark" id="surname" name='surname' [(ngModel)]="surname" placeholder="Surname*"  required>
+        </div>
+        <div class="col-12 col-lg-6">
+            <label for="exampleFormControlInput1">Age*</label>
+            <input type="number" class="form-control  border border-dark" id="age" name='age'  [(ngModel)]="age"  placeholder="Age*"  required>
+        </div>
+        <div class="col-12 col-lg-6">
+            <label for="exampleFormControlInput1">Job*</label>
+            <input type="text" class="form-control  border border-dark" id="job" name='job' [(ngModel)]="job" placeholder="Job*" required>
+        </div>
+        <div class="col-12 d-flex justify-content-end my-2">
+            <input type='submit' class='btn btn-success' value='Add user'>
+            <app-button text='Cancel' btnDelete='no' btnCancel='yes' (btnClick)="cancelVisibilityCreate()"> </app-button>
+        </div>
+    </div>
+  </form>

@@ -1,0 +1,22 @@
+<div class="container my-4">
+    
+    <app-create-user (onAddUser)="addUser($event)"></app-create-user>
+    <app-edit-user (onEditUser)="editUser($event)" *ngFor='let user of users' [user]="user"></app-edit-user>
+    
+    <div *ngIf="showTableUser"  >
+        <div class="text-center">
+            <h1>{{title}}</h1>
+            <div class='row bg-dark text-white border-top border-bottom border-dark rounded d-none d-lg-flex text-center'>
+                <div class="col-1  border-end border-white">#</div>
+                <div class="col-2  border-start border-end border-white">First name</div>
+                <div class="col-2  border-start border-end border-white">Last name</div>
+                <div class="col-1  border-start border-end border-white">Age</div>
+                <div class="col-2  border-start border-end border-white">Job</div>
+                <div class="col-4  border-startborder-white"></div>
+            </div>
+        </div>
+    <div  *ngIf="showTableUser">
+        <app-user-row *ngFor='let user of users' [user]="user"></app-user-row> 
+    </div>
+    <app-delete-user *ngFor='let user of users' [user]="user" (onDeleteUser)="deleteUser(user)"></app-delete-user>
+</div>

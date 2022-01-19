@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Smith",
+      "age": 20,
+      "job": "teacher"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Doe",
+      "age": 30,
+      "job": "doctor"
+    },
+    {
+      "id": 3,
+      "name": "Jack",
+      "surname": "Black",
+      "age": 40,
+      "job": "policeman"
+    },
+    {
+      "id": 4,
+      "name": "Jill",
+      "surname": "White",
+      "age": 50,
+      "job": "nurse"
+    },
+    {
+      "id": 5,
+      "name": "Joe",
+      "surname": "Brown",
+      "age": 60,
+      "job": "teacher"
+    },
+    {
+      "id": 6,
+      "name": "Jana",
+      "surname": "Green",
+      "age": 70,
+      "job": "doctor"
+    },
+    {
+      "id": 7,
+      "name": "Jack",
+      "surname": "Black",
+      "age": 80,
+      "job": "policeman"
+    },
+    {
+      "id": 8,
+      "name": "Jill",
+      "surname": "White",
+      "age": 90,
+      "job": "nurse"
+    },
+    {
+      "id": 9,
+      "name": "Joe",
+      "surname": "Brown",
+      "age": 100,
+      "job": "teacher"
+    },
+    {
+      "id": 10,
+      "name": "Цезар",
+      "surname": "Бранкованов",
+      "age": 6,
+      "job": "Самоед"
+    }
+  ]
+}

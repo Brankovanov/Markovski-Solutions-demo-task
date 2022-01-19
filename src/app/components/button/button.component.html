@@ -1,0 +1,1 @@
+<button type="button" class="btn mx-2" [ngClass]="[ btnDelete=='no' ? 'btn-primary' : 'btn-danger', btnCancel=='yes' ? 'btn-secondary':'']"  (click)="onClick()" attr.data-bs-toggle={{datatoggle}} attr.data-bs-target={{datatarget}} attr.data-bs-dismiss={{datadismiss}}>{{text}}</button>
